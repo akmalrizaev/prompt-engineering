@@ -212,5 +212,34 @@ screen.fill(purple)
 
 Now, the game’s background will be purple instead of black. Let me know if you need further assistance!
 
+===============================================================================================================
+
+Prompt:
+Where in the code can I adjust the speed of the snake?
+
+==============================================================================================================
+
+You can adjust the speed of the snake by modifying the snake_speed variable, which is defined near the top of the code:
+snake_speed = 15
+
+This variable controls how many frames per second (fps) the game runs, which directly affects how fast the snake moves. A higher value will make the snake move faster, while a lower value will slow it down.
+
+Steps to Adjust Snake Speed:
+Find the snake_speed Variable: Locate this line near the top of the code:
+snake_speed = 15
+
+Change Its Value:
+
+Increase speed: Set a higher number, such as 20 or 25, for a faster snake.
+Decrease speed: Set a lower number, such as 10 or 5, for a slower snake.
+Dynamic Speed Adjustment (Optional): If you want the snake to get faster as the game progresses (e.g., as the player’s score increases), you can adjust snake_speed dynamically in the game loop. For example:
+
+Replace:
+clock.tick(snake_speed)
+
+With:
+clock.tick(snake_speed + length_of_snake // 5)
+
+This example makes the snake speed increase slightly as it grows larger, adding more challenge.
 
 """
