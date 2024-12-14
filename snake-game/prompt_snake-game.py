@@ -183,4 +183,34 @@ game_loop()
 
 ===============================================================================================
 
+Prompt:
+I want to change the background color from blue to purple. Where in the code can I do that?
+
+==================================================================================================
+
+To change the background color of the game, you need to modify the color used when filling the screen in the game_loop function. Specifically, replace the screen.fill(black) line with your desired color.
+
+Here’s what you need to do:
+
+Define a purple color at the top of the script:
+purple = (128, 0, 128)
+
+Locate the lines where screen.fill(black) is used. These are the lines responsible for filling the background with black. Replace black with purple.
+
+For example, modify these lines in the game_loop function:
+screen.fill(black)
+
+Change them to:
+screen.fill(purple)
+
+Full Example of the Relevant Changes
+At the top of the code, add the new color definition:
+purple = (128, 0, 128)
+
+In the game_loop function, replace both occurrences of screen.fill(black) with:
+screen.fill(purple)
+
+Now, the game’s background will be purple instead of black. Let me know if you need further assistance!
+
+
 """
