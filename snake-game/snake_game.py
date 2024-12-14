@@ -17,6 +17,7 @@ red = (213, 50, 80)
 black = (0, 0, 0)
 green = (0, 255, 0)
 blue = (50, 153, 213)
+purple = (128, 0, 128)
 
 # Snake settings
 block_size = 20
@@ -70,7 +71,8 @@ def game_loop():
 
     while not game_over:
         while game_close:
-            screen.fill(black)
+            # screen.fill(black)
+            screen.fill(purple)
             message("Game Over! Press C to Play Again or Q to Quit", red)
             display_score(length_of_snake - 1)
             pygame.display.update()
@@ -106,7 +108,8 @@ def game_loop():
 
         x1 += x1_change
         y1 += y1_change
-        screen.fill(black)
+        # screen.fill(black)
+        screen.fill(purple)
         pygame.draw.rect(screen, red, [food_x, food_y, block_size, block_size])
 
         snake_head = [x1, y1]
