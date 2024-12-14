@@ -21,7 +21,8 @@ purple = (128, 0, 128)
 
 # Snake settings
 block_size = 20
-snake_speed = 15
+# snake_speed = 15
+snake_speed = 10
 
 # Clock for controlling the frame rate
 clock = pygame.time.Clock()
