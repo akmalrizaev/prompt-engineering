@@ -2,6 +2,7 @@
 Prompt:
 I want to create a Snake Game using Python. What steps would I need to do that?
 
+=========================================================================
 Answer:
 
 Steps to Create a Snake Game
@@ -45,5 +46,11 @@ Use pygame.time.Clock to control the frame rate.
 10. Handle Game Over
 Display a "Game Over" message when the snake dies.
 Provide an option to restart or exit.
+=======================================================
+
+Prompt:
+Provide the code for a Snake Game in Python. The code should include all details and features described above.
+
+
 
 """
